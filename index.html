@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiện Nghi Việt - Sản phẩm gia dụng chất lượng cao</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <h1>Tiện Nghi Việt</h1>
+                    <p>Giải pháp gia dụng thông minh</p>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Hotline:</span>
+                        <a href="tel:0397788669">0397 788 669</a>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Email:</span>
+                        <a href="mailto:info@tiennghiviet.com">info@tiennghiviet.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Sản phẩm gia dụng chất lượng cao</h2>
+                <p>Mang đến những giải pháp thông minh cho ngôi nhà của bạn</p>
+                <button class="cta-button" onclick="scrollToProducts()">Xem sản phẩm</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Sản phẩm nổi bật</h2>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Phục hồi nhựa nhám</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Phục hồi nhựa nhám</h3>
+                        <p class="product-description">Sản phẩm chuyên dụng giúp phục hồi bề mặt nhựa bị nhám, mờ, trả lại độ bóng tự nhiên</p>
+                        <div class="product-price">219.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Phục hồi nhựa nhám', '219.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Keo siêu dính đa năng</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Keo siêu dính đa năng</h3>
+                        <p class="product-description">Keo dán siêu mạnh, phù hợp với nhiều loại vật liệu khác nhau, khô nhanh, bền chắc</p>
+                        <div class="product-price">189.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Keo siêu dính đa năng', '189.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Bình xịt bọt tuyết vệ sinh</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Bình xịt bọt tuyết vệ sinh tự động</h3>
+                        <p class="product-description">Bọt tuyết làm sạch tự động, loại bỏ vết bẩn cứng đầu một cách hiệu quả</p>
+                        <div class="product-price">219.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Bình xịt bọt tuyết vệ sinh tự động', '219.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Keo chống thấm nước</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Keo trong suốt chống thấm nước</h3>
+                        <p class="product-description">Keo chống thấm trong suốt, không ảnh hưởng đến thẩm mỹ, độ bền cao</p>
+                        <div class="product-price">189.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Keo trong suốt chống thấm nước', '189.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Băng keo chống thấm</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Băng keo chống thấm</h3>
+                        <p class="product-description">Băng keo chống thấm đa năng, dễ sử dụng, hiệu quả cao trong việc ngăn nước</p>
+                        <div class="product-price">219.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Băng keo chống thấm', '219.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <div class="product-placeholder">
+                            <span>Van ngăn mùi cống</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Van ngăn mùi cống</h3>
+                        <p class="product-description">Van chống mùi hôi từ cống, dễ lắp đặt, hiệu quả ngăn mùi tối ưu</p>
+                        <div class="product-price">89.000 ₫</div>
+                        <button class="add-to-cart" onclick="contactOrder('Van ngăn mùi cống', '89.000')">Liên hệ đặt hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ với chúng tôi</h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h3>Điện thoại</h3>
+                    <p><a href="tel:0397788669">0397 788 669</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@tiennghiviet.com">info@tiennghiviet.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <h3>Địa chỉ</h3>
+                    <p>56 Thạnh Lộc 29, P. Thạnh Lộc<br>Quận 12, TP.HCM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tiện Nghi Việt</h3>
+                    <p>Chuyên cung cấp các sản phẩm gia dụng chất lượng cao, mang đến giải pháp thông minh cho ngôi nhà Việt.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>📞 0397 788 669</p>
+                    <p>✉️ info@tiennghiviet.com</p>
+                    <p>📍 56 Thạnh Lộc 29, P. Thạnh Lộc, Quận 12, TP.HCM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tiện Nghi Việt. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
